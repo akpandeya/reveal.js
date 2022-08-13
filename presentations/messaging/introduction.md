@@ -1,10 +1,7 @@
-# Messaging
+# Introduction
 
 
-## Introduction
-
-
-### Challenges of integration solutions
+## Challenges of integration solutions
 
 1. Netwroks are unreliable
 2. Netwroks are slow
@@ -12,7 +9,7 @@
 4. Chagnes are inevitable
 
 
-#### Approcahes of solving enterprise integration
+## Approcahes of solving enterprise integration
 
 1. File Transfer
 2. Shared Database
@@ -20,7 +17,7 @@
 4. Messaging
 
 
-### Message Transmission step by step
+## Message Transmission step by step
 ![Message Transmission step by step](./images/messaging.png)
 Note:
 
@@ -39,7 +36,7 @@ There are two different strategies involved when sending data to a channel:
 
 
 
-### Why use messaging?
+## Why use messaging?
 
 - _More immediate_ than __file transfer__.
 - _Better encapsulated_ than __shared database__.
@@ -54,3 +51,11 @@ There are two different strategies involved when sending data to a channel:
 - _Meditation_: The messaging system acts as a mediator between many systems.
 - _Thread Management_: Aysnchronous messaging allows one application to work without blocking anotherone.
 
+
+## Challenges of Messaging
+
+- _Complex programming model_: We need to use event driven programming model.
+- _Sequence Issues_: The sequence of messgaes is not guaranteed by default. Some extra steps need to be taken for ensuring this.
+- _Synchronous scenarios_: There may be scenarios where synchronous communication is needed e.g. to check the price of airlines ticket. Messaging system is not suitable for such situations.
+- _Performance_: Messaging system add some overhead to the communication.
+- _Vendor Lock in_: Once you select a system you get vendor locked in as every vendor has a different messgae format.
