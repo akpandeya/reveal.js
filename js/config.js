@@ -46,7 +46,7 @@ export default {
 	// number for the current slide. The function should take in a slide
 	// object and return an array with one string [slideNumber] or
 	// three strings [n1,delimiter,n2]. See #formatSlideNumber().
-	slideNumber: false,
+	slideNumber: true,
 
 	// Can be used to limit the contexts in which the slide number appears
 	// - "all":      Always show the slide number
@@ -60,13 +60,13 @@ export default {
 
 	// Add the current slide number to the URL hash so that reloading the
 	// page/copying the URL will return you to the same slide
-	hash: false,
+	hash: true,
 
 	// Flags if we should monitor the hash and change slides accordingly
 	respondToHashChanges: true,
 
 	// Push each slide change to the browser history.  Implies `hash: true`
-	history: false,
+	history: true,
 
 	// Enable keyboard shortcuts for navigation
 	keyboard: true,
